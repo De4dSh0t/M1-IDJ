@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0924c15c-810d-4a65-8862-26dea10ce17e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/QuestSystem/Reward.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestSystem/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/Quest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +39,13 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/QuestSystem/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/Quest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QuestSystem/Reward.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/QuestSystem/Quest.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/Reward.cs" />
       </list>
     </option>
   </component>
@@ -89,7 +91,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587492935436</updated>
-      <workItem from="1587492954137" duration="2337000" />
+      <workItem from="1587492954137" duration="3313000" />
     </task>
     <task id="LOCAL-00001" summary="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)">
       <created>1587494047762</created>
@@ -98,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587494047762</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="QuestSystem v0.1.1 (Updated &quot;Quest()&quot;)">
+      <created>1587495457062</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587495457062</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,12 +129,13 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)" />
+    <MESSAGE value="QuestSystem v0.1.1 (Updated &quot;Quest()&quot;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem v0.1.1 (Updated &quot;Quest()&quot;)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1587494050766">
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1587495458508">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1587494050766" />
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1587495458508" />
   </component>
 </project>
