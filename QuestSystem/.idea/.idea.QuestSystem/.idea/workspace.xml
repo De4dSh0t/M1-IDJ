@@ -20,23 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0924c15c-810d-4a65-8862-26dea10ce17e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/dictionaries" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem/Quest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem/QuestSystem.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem/obj/Debug/netcoreapp3.1/QuestSystem.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem/obj/Debug/netcoreapp3.1/QuestSystem.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem/obj/Debug/netcoreapp3.1/QuestSystem.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem/obj/Debug/netcoreapp3.1/QuestSystem.csprojAssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem/obj/QuestSystem.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem/obj/QuestSystem.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem/obj/QuestSystem.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestSystem/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/Quest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,8 +89,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587492935436</updated>
-      <workItem from="1587492954137" duration="1087000" />
+      <workItem from="1587492954137" duration="2337000" />
     </task>
+    <task id="LOCAL-00001" summary="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)">
+      <created>1587494047762</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587494047762</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,5 +119,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1587494050766">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1587494050766" />
   </component>
 </project>

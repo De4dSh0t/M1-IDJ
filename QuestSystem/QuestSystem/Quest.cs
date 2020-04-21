@@ -6,6 +6,7 @@ namespace QuestSystem
     {
         private string name;
         private string description;
+        private TimeSpan duration;
 
         public string Name
         {
@@ -32,6 +33,20 @@ namespace QuestSystem
                 }
 
                 description = value;
+            }
+        }
+
+        public TimeSpan Duration
+        {
+            get => duration;
+            set
+            {
+                if (value == TimeSpan.Zero)
+                {
+                    throw new ArgumentException("Seems like there is no duration for this quest...");
+                }
+
+                duration = value;
             }
         }
     }
