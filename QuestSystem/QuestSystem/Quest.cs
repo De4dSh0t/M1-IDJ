@@ -8,6 +8,14 @@ namespace QuestSystem
         private string description;
         private TimeSpan duration;
 
+        protected enum Status
+        {
+            WAITING,
+            CURRENT,
+            DONE,
+            CANCELLED
+        };
+
         public string Name
         {
             get => name;
