@@ -20,10 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0924c15c-810d-4a65-8862-26dea10ce17e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/QuestSystem/MainQuest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestSystem/SideQuest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestSystem/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuestSystem/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/Quest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestSystem/Reward.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/Reward.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestSystem/obj/Debug/netcoreapp3.1/QuestSystem.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/obj/Debug/netcoreapp3.1/QuestSystem.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,13 +43,18 @@
     <setting file="file://$PROJECT_DIR$/QuestSystem/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/Quest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/Reward.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QuestSystem/MainQuest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QuestSystem/SideQuest.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/QuestSystem/Money.cs" />
-        <option value="$PROJECT_DIR$/QuestSystem/Quest.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/Reward.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/SideQuest.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/MainQuest.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/Quest.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/Program.cs" />
       </list>
     </option>
   </component>
@@ -95,7 +101,8 @@
       <option name="presentableId" value="Default" />
       <updated>1587492935436</updated>
       <workItem from="1587492954137" duration="3546000" />
-      <workItem from="1587576170348" duration="1965000" />
+      <workItem from="1587576170348" duration="2057000" />
+      <workItem from="1587832009915" duration="915000" />
     </task>
     <task id="LOCAL-00001" summary="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)">
       <created>1587494047762</created>
@@ -118,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587496476809</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="QuestSystem v0.2.1 (Updated &quot;Quest&quot; and &quot;Reward&quot;)">
+      <created>1587578507642</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587578507642</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,12 +157,13 @@
     <MESSAGE value="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)" />
     <MESSAGE value="QuestSystem v0.1.1 (Updated &quot;Quest()&quot;)" />
     <MESSAGE value="QuestSystem v0.2 (Added &quot;Reward&quot;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem v0.2 (Added &quot;Reward&quot;)" />
+    <MESSAGE value="QuestSystem v0.2.1 (Updated &quot;Quest&quot; and &quot;Reward&quot;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem v0.2.1 (Updated &quot;Quest&quot; and &quot;Reward&quot;)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1587496478606">
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1587578509690">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1587496478606" />
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1587578509690" />
   </component>
 </project>

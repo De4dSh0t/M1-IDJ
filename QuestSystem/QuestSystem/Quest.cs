@@ -8,7 +8,7 @@ namespace QuestSystem
         private string description;
         private TimeSpan duration;
 
-        protected enum Status
+        public enum Status
         {
             WAITING,
             CURRENT,
@@ -56,6 +56,13 @@ namespace QuestSystem
 
                 duration = value;
             }
+        }
+
+        public Quest(string name, string description, TimeSpan duration)
+        {
+            Name = name;
+            Description = description;
+            Duration = duration;
         }
     }
 }
