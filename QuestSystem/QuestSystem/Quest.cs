@@ -7,44 +7,38 @@ namespace QuestSystem
         private string name;
         private string description;
         private TimeSpan duration;
+        private string type;
+        private string requirements;
 
-        public enum Status
-        {
-            WAITING,
-            CURRENT,
-            DONE,
-            CANCELLED
-        };
-
-        public string Name
+        public string Name //Nome da quest
         {
             get => name;
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentException("Please, insert a name.");
+                    throw new ArgumentException("Insert a name.");
                 }
 
                 name = value;
             }
         }
 
-        public string Description
+        public string Description //Descrição da Quest
         {
             get => description;
             set
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentException("Please, insert a description.");
+                    throw new ArgumentException("Insert a description.");
                 }
 
                 description = value;
             }
         }
 
-        public TimeSpan Duration
+        public TimeSpan Duration //Duração da Quest
         {
             get => duration;
             set
@@ -55,6 +49,34 @@ namespace QuestSystem
                 }
 
                 duration = value;
+            }
+        }
+
+        public string Type //Tipo da Quest (Se é Main Quest, Side Quest ou outro)
+        {
+            get => type;
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("Insert a type.");
+                }
+
+                type = value;
+            }
+        }
+
+        public string Requirements //Requesitos da Quest(Item, Nivel, Classe ou outro necessário para realizar a quest)
+        {
+            get => requirements;
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("Insert a requirement.");
+                }
+                
+                requirements = value;
             }
         }
 
