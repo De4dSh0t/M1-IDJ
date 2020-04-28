@@ -68,7 +68,7 @@ namespace QuestSystem
             }
         }
 
-        public string Requirements //Requesitos da Quest(Item, Nivel, Classe ou outro necessário para realizar a quest)
+        public string Requirements //Requesitos da Quest (Item, Nivel, Classe ou outro necessário para realizar a quest)
         {
             get => requirements;
             set
@@ -82,17 +82,28 @@ namespace QuestSystem
             }
         }
 
-        public Status QuestStatus
+        public Status QuestStatus //Status da Quest (Se está "WAITING", "CURRENT", "DONE" ou "CANCELLED")
         {
             get => questStatus;
-            set => questStatus = value;
+            set
+            {
+                if (value == Status.CURRENT)
+                {
+                    QuestTimer();
+                }
+
+                questStatus = value;
+            }
         }
 
-        public Quest(string name, string description, int duration)
+        public Quest(string name, string description, int duration, string type, string requirements, Status questStatus)
         {
             Name = name;
             Description = description;
             Duration = duration;
+            Type = type;
+            Requirements = requirements;
+            QuestStatus = questStatus;
         }
 
         private void QuestTimer()
@@ -102,6 +113,11 @@ namespace QuestSystem
             timer.Interval = duration; //Adiciona o tempo da quest ao intervalo do Timer
             timer.Elapsed += Event; //Quando esse intervalo terminar, ocorre um evento ("Event()")
             timer.Enabled = true;
+
+            if (questStatus == Status.DONE)
+            {
+                timer.Stop();
+            }
         }
 
         //O método "Event()" está associado ao método "QuestTimer()" e serve para que, quando o tempo da quest termine,
