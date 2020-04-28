@@ -20,11 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0924c15c-810d-4a65-8862-26dea10ce17e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/QuestSystem/MainQuest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem/SideQuest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestSystem/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestSystem/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/Quest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestSystem/MainQuest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/MainQuest.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +48,10 @@
       <list>
         <option value="$PROJECT_DIR$/QuestSystem/Money.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/Reward.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/Program.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/Quest.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/SideQuest.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/MainQuest.cs" />
-        <option value="$PROJECT_DIR$/QuestSystem/Quest.cs" />
-        <option value="$PROJECT_DIR$/QuestSystem/Program.cs" />
       </list>
     </option>
   </component>
@@ -102,7 +99,8 @@
       <updated>1587492935436</updated>
       <workItem from="1587492954137" duration="3546000" />
       <workItem from="1587576170348" duration="2057000" />
-      <workItem from="1587832009915" duration="915000" />
+      <workItem from="1587832009915" duration="2020000" />
+      <workItem from="1587994745971" duration="2087000" />
     </task>
     <task id="LOCAL-00001" summary="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)">
       <created>1587494047762</created>
@@ -132,7 +130,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587578507642</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="QuestSystem v0.3 (Added &quot;MainQuest&quot; class)">
+      <created>1587833151379</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587833151379</updated>
+    </task>
+    <task id="LOCAL-00006" summary="QuestSystem v0.4 (Added &quot;SideQuest&quot; class)">
+      <created>1587833199124</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587833199124</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,12 +170,30 @@
     <MESSAGE value="QuestSystem v0.1.1 (Updated &quot;Quest()&quot;)" />
     <MESSAGE value="QuestSystem v0.2 (Added &quot;Reward&quot;)" />
     <MESSAGE value="QuestSystem v0.2.1 (Updated &quot;Quest&quot; and &quot;Reward&quot;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem v0.2.1 (Updated &quot;Quest&quot; and &quot;Reward&quot;)" />
+    <MESSAGE value="QuestSystem v0.3 (Added &quot;MainQuest&quot; class)" />
+    <MESSAGE value="QuestSystem v0.4 (Added &quot;SideQuest&quot; class)" />
+    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem v0.4 (Added &quot;SideQuest&quot; class)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1587578509690">
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1587834541709">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1587578509690" />
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1587834541709" />
+    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1587834541709">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="224" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1587834541709" />
+    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1587834541708">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="224" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1587834541708" />
+    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1587834541709">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1431" height="224" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1587834541709" />
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1587833200102">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1587833200102" />
   </component>
 </project>
