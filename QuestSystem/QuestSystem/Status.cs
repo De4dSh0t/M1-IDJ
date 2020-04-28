@@ -2,8 +2,8 @@
 {
     public enum Status
     {
-        WAITING,
-        CURRENT,
+        INACTIVE,
+        ACTIVE,
         DONE,
         CANCELLED
     }

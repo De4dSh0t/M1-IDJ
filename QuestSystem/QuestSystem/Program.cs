@@ -10,14 +10,14 @@ namespace QuestSystem
                 "Quest para testar o Timer", 
                 10000, "Main Quest", 
                 "Dev",
-                Status.WAITING);
+                Status.INACTIVE);
             
             //Testar o Timer
             string input = Console.ReadLine();
             
             if (input == "c")
             {
-                q.QuestStatus = Status.CURRENT;
+                q.QuestStatus = Status.ACTIVE;
             }
 
             while (q.QuestStatus != Status.CANCELLED)

@@ -87,7 +87,7 @@ namespace QuestSystem
             get => questStatus;
             set
             {
-                if (value == Status.CURRENT)
+                if (value == Status.ACTIVE) //Caso a quest esteja ativa, então o timer começa (dependendo do tempo pré-definido)
                 {
                     QuestTimer();
                 }
