@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0924c15c-810d-4a65-8862-26dea10ce17e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/QuestSystem/Status.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuestSystem/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/Quest.cs" afterDir="false" />
     </list>
@@ -102,7 +101,7 @@
       <workItem from="1587576170348" duration="2057000" />
       <workItem from="1587832009915" duration="2020000" />
       <workItem from="1587994745971" duration="2087000" />
-      <workItem from="1588087200613" duration="911000" />
+      <workItem from="1588087200613" duration="2759000" />
     </task>
     <task id="LOCAL-00001" summary="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)">
       <created>1587494047762</created>
@@ -153,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588087500310</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="QuestSystem 0.2.1 (Added Enum &quot;Status&quot; and Updated &quot;Quest&quot;)">
+      <created>1588088366065</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1588088366065</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +188,8 @@
     <MESSAGE value="QuestSystem v0.3 (Added &quot;MainQuest&quot; class)" />
     <MESSAGE value="QuestSystem v0.4 (Added &quot;SideQuest&quot; class)" />
     <MESSAGE value="QuestSystem 0.2 [Restart] (Removed &quot;MainQuest&quot; and &quot;SideQuest&quot;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem 0.2 [Restart] (Removed &quot;MainQuest&quot; and &quot;SideQuest&quot;)" />
+    <MESSAGE value="QuestSystem 0.2.1 (Added Enum &quot;Status&quot; and Updated &quot;Quest&quot;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem 0.2.1 (Added Enum &quot;Status&quot; and Updated &quot;Quest&quot;)" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1587834541709">
@@ -201,9 +208,13 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="1431" height="224" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1587834541709" />
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588087501970">
+    <state x="155" y="93" width="1288" height="678" key="VCS.FileHistoryDialog" timestamp="1588088867807">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1588087501970" />
+    <state x="155" y="93" width="1288" height="678" key="VCS.FileHistoryDialog/62.0.1474.864@62.0.1474.864" timestamp="1588088867807" />
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588088367775">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1588088367775" />
   </component>
 </project>
