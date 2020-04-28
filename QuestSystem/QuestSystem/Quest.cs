@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Timers;
 
 namespace QuestSystem
@@ -9,7 +10,7 @@ namespace QuestSystem
         private string description;
         private int duration;
         private string type;
-        private string requirements;
+        private List<string> requirements;
         private Status questStatus;
 
         public string Name //Nome da quest
@@ -68,12 +69,12 @@ namespace QuestSystem
             }
         }
 
-        public string Requirements //Requesitos da Quest (Item, Nivel, Classe ou outro necessário para realizar a quest)
+        public List<string> Requirements //Requesitos da Quest (Item, Nivel, Classe ou outro necessário para realizar a quest)
         {
             get => requirements;
             set
             {
-                if (string.IsNullOrWhiteSpace(value))
+                if (value.Count == 0)
                 {
                     throw new ArgumentException("Insert a requirement.");
                 }
@@ -85,18 +86,10 @@ namespace QuestSystem
         public Status QuestStatus //Status da Quest (Se está "WAITING", "CURRENT", "DONE" ou "CANCELLED")
         {
             get => questStatus;
-            set
-            {
-                if (value == Status.ACTIVE) //Caso a quest esteja ativa, então o timer começa (dependendo do tempo pré-definido)
-                {
-                    QuestTimer();
-                }
-
-                questStatus = value;
-            }
+            set => questStatus = value;
         }
 
-        public Quest(string name, string description, int duration, string type, string requirements, Status questStatus)
+        public Quest(string name, string description, int duration, string type, List<string> requirements, Status questStatus)
         {
             Name = name;
             Description = description;
@@ -104,6 +97,17 @@ namespace QuestSystem
             Type = type;
             Requirements = requirements;
             QuestStatus = questStatus;
+        }
+
+        public void QuestRunner() //Método que executa/organiza todos os outros métodos da classe
+        {
+            //
+            
+            
+            if (questStatus == Status.ACTIVE) //Caso a quest esteja ativa, então o timer começa (dependendo do tempo pré-definido)
+            {
+                QuestTimer();
+            }
         }
 
         private void QuestTimer()
@@ -114,7 +118,7 @@ namespace QuestSystem
             timer.Elapsed += Event; //Quando esse intervalo terminar, ocorre um evento ("Event()")
             timer.Enabled = true;
 
-            if (questStatus == Status.DONE)
+            if (questStatus == Status.DONE || questStatus == Status.CANCELLED)
             {
                 timer.Stop();
             }
@@ -125,6 +129,25 @@ namespace QuestSystem
         private void Event(object source, ElapsedEventArgs eventArgs)
         {
             questStatus = Status.CANCELLED;
+        }
+
+        private void CheckRequirements(List<string> features) //Verifica se as características da personagem cumpre os requesitos pre-definidos
+        {
+            //Se a lista "features" não tiver a mesma quantidade de variáveis que a lista "requirements", é imediatamente cancelada
+            if (features.Count != requirements.Count)
+            {
+                throw new ArgumentException("The character doesn't have the features required!");
+            }
+            
+            //Neste "for" é verificado se a lista "features" não contém alguma variável da lista "requirements"
+            for (int i = 0; i < requirements.Count; i++)
+            {
+                if (features.Contains(requirements[i]) == false)
+                {
+                    throw new ArgumentException("The character can't do this quest.");
+                }
+            }
+            
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace QuestSystem
 {
@@ -8,8 +9,9 @@ namespace QuestSystem
         {
             Quest q = new Quest("Timer Test", 
                 "Quest para testar o Timer", 
-                10000, "Main Quest", 
-                "Dev",
+                10000, 
+                "Main Quest", 
+                new List<string> { "DEV" },
                 Status.INACTIVE);
             
             //Testar o Timer
