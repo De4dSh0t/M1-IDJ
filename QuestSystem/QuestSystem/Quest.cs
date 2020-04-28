@@ -84,7 +84,7 @@ namespace QuestSystem
             }
         }
 
-        public Status QuestStatus //Status da Quest (Se está "WAITING", "CURRENT", "DONE" ou "CANCELLED")
+        public Status QuestStatus //Status da Quest (Se está "INACTIVE", "ACTIVE", "DONE" ou "CANCELLED")
         {
             get => questStatus;
             set
@@ -136,6 +136,10 @@ namespace QuestSystem
             {
                 throw new ArgumentException("The character doesn't have the features required!");
             }
+
+            //Organiza a lista por ordem alfabetica/crescente
+            requirements.Sort();
+            features.Sort();
 
             //É verificado se a lista "features" não contém uma variável igual à da lista "requirements"
             if (features.SequenceEqual(requirements, StringComparer.OrdinalIgnoreCase) == false)

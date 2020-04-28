@@ -11,7 +11,7 @@ namespace QuestSystem
                 "Quest para testar o Timer", 
                 10000, 
                 "Main Quest", 
-                new List<string> { "DEV" },
+                new List<string> { "DEV", "FARMER", "OFFICER" },
                 Status.INACTIVE);
             
             //Testar o Timer
@@ -33,7 +33,7 @@ namespace QuestSystem
             //Testar o "CheckRequirements"
             try
             {
-                q.CheckRequirements(new List<string>() { "Deiv" });
+                q.CheckRequirements(new List<string>() { "DEV", "OFFICER", "FARMER" });
             }
             catch (ArgumentException e)
             {

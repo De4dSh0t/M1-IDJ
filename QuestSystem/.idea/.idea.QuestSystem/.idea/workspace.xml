@@ -40,6 +40,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/QuestSystem/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/Quest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/Reward.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/Status.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -102,7 +103,7 @@
       <workItem from="1587576170348" duration="2057000" />
       <workItem from="1587832009915" duration="2020000" />
       <workItem from="1587994745971" duration="2087000" />
-      <workItem from="1588087200613" duration="8399000" />
+      <workItem from="1588087200613" duration="9780000" />
     </task>
     <task id="LOCAL-00001" summary="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)">
       <created>1587494047762</created>
@@ -188,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588094858829</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="QuestSystem 0.2.6 (Updated &quot;Quest&quot; by removing &quot;QuestRunner&quot;, Updated &quot;CheckRequirements&quot; and Updated &quot;Program&quot; to try &quot;CheckRequirements&quot;)">
+      <created>1588095718488</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1588095718488</updated>
+    </task>
+    <task id="LOCAL-00014" summary="QuestSystem 0.2.6 (Updated &quot;Quest&quot; by removing &quot;QuestRunner&quot;, Updated &quot;CheckRequirements&quot; and Updated &quot;Program&quot; to try &quot;CheckRequirements&quot;)">
+      <created>1588095764514</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1588095764514</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,25 +237,26 @@
     <MESSAGE value="QuestSystem 0.2.3 (Updated &quot;Quest&quot; and &quot;Program&quot; to test &quot;QuestTimer()&quot;)" />
     <MESSAGE value="QuestSystem 0.2.4 (Updated some names on &quot;Quest&quot;, &quot;Program&quot; and &quot;Status&quot;)" />
     <MESSAGE value="QuestSystem 0.2.5 (Updated &quot;Quest&quot; with method &quot;CheckRequirements&quot; and &quot;QuestRunner&quot;, Changed property &quot;Requirements&quot; to List&lt;string&gt;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem 0.2.5 (Updated &quot;Quest&quot; with method &quot;CheckRequirements&quot; and &quot;QuestRunner&quot;, Changed property &quot;Requirements&quot; to List&lt;string&gt;)" />
+    <MESSAGE value="QuestSystem 0.2.6 (Updated &quot;Quest&quot; by removing &quot;QuestRunner&quot;, Updated &quot;CheckRequirements&quot; and Updated &quot;Program&quot; to try &quot;CheckRequirements&quot;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem 0.2.6 (Updated &quot;Quest&quot; by removing &quot;QuestRunner&quot;, Updated &quot;CheckRequirements&quot; and Updated &quot;Program&quot; to try &quot;CheckRequirements&quot;)" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1588095280152">
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1588096691988">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588095280152" />
-    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1588095280152">
+    <state width="1431" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588096691988" />
+    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1588096691988">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1588095280152" />
-    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1588095280152">
+    <state width="1431" height="224" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1588096691988" />
+    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1588096691988">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1588095280152" />
-    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1588095280152">
+    <state width="1431" height="224" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1588096691988" />
+    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1588096691988">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1588095280152" />
+    <state width="1431" height="224" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1588096691988" />
     <state width="1431" height="304" key="GridCell.Tab.1.bottom" timestamp="1588090970115">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -309,9 +325,9 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="155" y="93" width="1288" height="678" key="VCS.FileHistoryDialog/62.0.1474.864@62.0.1474.864" timestamp="1588088867807" />
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588094862768">
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588095765457">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1588094862768" />
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1588095765457" />
   </component>
 </project>
