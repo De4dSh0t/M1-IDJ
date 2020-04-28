@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Timers;
 
 namespace QuestSystem
@@ -86,7 +87,15 @@ namespace QuestSystem
         public Status QuestStatus //Status da Quest (Se está "WAITING", "CURRENT", "DONE" ou "CANCELLED")
         {
             get => questStatus;
-            set => questStatus = value;
+            set
+            {
+                if (questStatus == Status.ACTIVE)
+                {
+                    QuestTimer();
+                }
+
+                questStatus = value;
+            }
         }
 
         public Quest(string name, string description, int duration, string type, List<string> requirements, Status questStatus)
@@ -97,17 +106,6 @@ namespace QuestSystem
             Type = type;
             Requirements = requirements;
             QuestStatus = questStatus;
-        }
-
-        public void QuestRunner() //Método que executa/organiza todos os outros métodos da classe
-        {
-            //
-            
-            
-            if (questStatus == Status.ACTIVE) //Caso a quest esteja ativa, então o timer começa (dependendo do tempo pré-definido)
-            {
-                QuestTimer();
-            }
         }
 
         private void QuestTimer()
@@ -131,23 +129,19 @@ namespace QuestSystem
             questStatus = Status.CANCELLED;
         }
 
-        private void CheckRequirements(List<string> features) //Verifica se as características da personagem cumpre os requesitos pre-definidos
+        public void CheckRequirements(List<string> features) //Verifica se as características da personagem cumpre os requesitos pre-definidos
         {
             //Se a lista "features" não tiver a mesma quantidade de variáveis que a lista "requirements", é imediatamente cancelada
             if (features.Count != requirements.Count)
             {
                 throw new ArgumentException("The character doesn't have the features required!");
             }
-            
-            //Neste "for" é verificado se a lista "features" não contém alguma variável da lista "requirements"
-            for (int i = 0; i < requirements.Count; i++)
+
+            //É verificado se a lista "features" não contém uma variável igual à da lista "requirements"
+            if (features.SequenceEqual(requirements, StringComparer.OrdinalIgnoreCase) == false)
             {
-                if (features.Contains(requirements[i]) == false)
-                {
-                    throw new ArgumentException("The character can't do this quest.");
-                }
+                throw new ArgumentException("The character can't do this quest.");
             }
-            
         }
     }
 }
