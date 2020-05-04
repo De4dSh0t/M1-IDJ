@@ -13,32 +13,6 @@ namespace QuestSystem
                 QuestTypes.MAIN, 
                 new List<string> { "DEV", "FARMER", "OFFICER" },
                 Status.INACTIVE);
-            
-            //Testar o Timer
-            // string input = Console.ReadLine();
-            //
-            // if (input == "c")
-            // {
-            //     q.QuestStatus = Status.ACTIVE;
-            // }
-            //
-            // while (q.QuestStatus != Status.CANCELLED)
-            // {
-            //     if (q.QuestStatus == Status.CANCELLED)
-            //     {
-            //         Console.WriteLine("Quest Terminated!");
-            //     }
-            // }
-
-            //Testar o "CheckRequirements"
-            try
-            {
-                q.CheckRequirements(new List<string>() { "DEV", "OFFICER", "FARMER" });
-            }
-            catch (ArgumentException e)
-            {
-                Console.WriteLine(e.Message);
-            }
         }
     }
 }
