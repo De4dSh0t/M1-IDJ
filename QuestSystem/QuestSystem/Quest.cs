@@ -13,8 +13,13 @@ namespace QuestSystem
         private string type;
         private List<string> requirements;
         private Status questStatus;
+        private Reward reward;
 
-        public string Name //Nome da quest
+        /// <summary>
+        /// Quest Name/Title Property
+        /// </summary>
+        /// <exception cref="ArgumentException"></exception>
+        public string Name
         {
             get => name;
             set
@@ -28,7 +33,11 @@ namespace QuestSystem
             }
         }
 
-        public string Description //Descrição da Quest
+        /// <summary>
+        /// Quest Description Property
+        /// </summary>
+        /// <exception cref="ArgumentException"></exception>
+        public string Description
         {
             get => description;
             set
@@ -42,7 +51,11 @@ namespace QuestSystem
             }
         }
 
-        public int Duration //Duração da Quest (em milisegundos)
+        /// <summary>
+        /// Quest Duration/Timer Property
+        /// </summary>
+        /// <exception cref="ArgumentException"></exception>
+        public int Duration
         {
             get => duration;
             set
@@ -56,7 +69,11 @@ namespace QuestSystem
             }
         }
 
-        public string Type //Tipo da Quest (Se é Main Quest, Side Quest ou outro)
+        /// <summary>
+        /// Quest Type Property (Main Quest/Side Quest)
+        /// </summary>
+        /// <exception cref="ArgumentException"></exception>
+        public string Type
         {
             get => type;
             set
@@ -70,7 +87,11 @@ namespace QuestSystem
             }
         }
 
-        public List<string> Requirements //Requesitos da Quest (Item, Nivel, Classe ou outro necessário para realizar a quest)
+        /// <summary>
+        /// Quest Requirements Property (Class/Item/Level)
+        /// </summary>
+        /// <exception cref="ArgumentException"></exception>
+        public List<string> Requirements
         {
             get => requirements;
             set
@@ -84,7 +105,10 @@ namespace QuestSystem
             }
         }
 
-        public Status QuestStatus //Status da Quest (Se está "INACTIVE", "ACTIVE", "DONE" ou "CANCELLED")
+        /// <summary>
+        /// Quest Status Property (If it is "INACTIVE", "ACTIVE", "DONE" or "CANCELLED")
+        /// </summary>
+        public Status QuestStatus
         {
             get => questStatus;
             set
@@ -98,6 +122,15 @@ namespace QuestSystem
             }
         }
 
+        /// <summary>
+        /// Quest Reward Property
+        /// </summary>
+        public Reward Reward
+        {
+            get => reward;
+            set => reward = value;
+        }
+
         public Quest(string name, string description, int duration, string type, List<string> requirements, Status questStatus)
         {
             Name = name;
@@ -108,6 +141,9 @@ namespace QuestSystem
             QuestStatus = questStatus;
         }
 
+        /// <summary>
+        /// Method used to control the time of the quest
+        /// </summary>
         private void QuestTimer()
         {
             Timer timer = new Timer();
@@ -121,15 +157,23 @@ namespace QuestSystem
                 timer.Stop();
             }
         }
-
-        //O método "Event()" está associado ao método "QuestTimer()" e serve para que, quando o tempo da quest termine,
-        //o "Event()" altere o estado da Quest para "CANCELLED"
+        
+        /// <summary>
+        /// Event called when the timer ends, changing the quest status to "CANCELLED"
+        /// </summary>
+        /// <param name="source"></param>
+        /// <param name="eventArgs"></param>
         private void Event(object source, ElapsedEventArgs eventArgs)
         {
             questStatus = Status.CANCELLED;
         }
 
-        public void CheckRequirements(List<string> features) //Verifica se as características da personagem cumpre os requesitos pre-definidos
+        /// <summary>
+        /// Check if certain character features match the pre-defined requirements
+        /// </summary>
+        /// <param name="features"></param>
+        /// <exception cref="ArgumentException"></exception>
+        public void CheckRequirements(List<string> features)
         {
             //Se a lista "features" não tiver a mesma quantidade de variáveis que a lista "requirements", é imediatamente cancelada
             if (features.Count != requirements.Count)
@@ -137,7 +181,7 @@ namespace QuestSystem
                 throw new ArgumentException("The character doesn't have the features required!");
             }
 
-            //Organiza a lista por ordem alfabetica/crescente
+            //Organiza as listas por ordem alfabetica/crescente
             requirements.Sort();
             features.Sort();
 
