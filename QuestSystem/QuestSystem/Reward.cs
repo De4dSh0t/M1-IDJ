@@ -7,6 +7,10 @@ namespace QuestSystem
         private string type;
         private float quantity; //Representa a quantidade da recompensa
 
+        /// <summary>
+        /// Reward Type (Money/Exp/Item)
+        /// </summary>
+        /// <exception cref="ArgumentException"></exception>
         public string Type
         {
             get => type;
@@ -20,6 +24,11 @@ namespace QuestSystem
                 type = value;
             }
         }
+        
+        /// <summary>
+        /// Reward Quantity
+        /// </summary>
+        /// <exception cref="ArgumentException"></exception>
         public float Quantity
         {
             get => quantity;

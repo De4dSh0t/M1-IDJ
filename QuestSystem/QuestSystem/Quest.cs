@@ -10,7 +10,7 @@ namespace QuestSystem
         private string name;
         private string description;
         private int duration;
-        private string type;
+        private QuestTypes type;
         private List<string> requirements;
         private Status questStatus;
         private Reward reward;
@@ -70,21 +70,12 @@ namespace QuestSystem
         }
 
         /// <summary>
-        /// Quest Type Property (Main Quest/Side Quest)
+        /// Quest Type Property (ENUM -> Main Quest/Side Quest/Event)
         /// </summary>
-        /// <exception cref="ArgumentException"></exception>
-        public string Type
+        public QuestTypes Type
         {
             get => type;
-            set
-            {
-                if (string.IsNullOrWhiteSpace(value))
-                {
-                    throw new ArgumentException("Insert a type.");
-                }
-
-                type = value;
-            }
+            set => type = value;
         }
 
         /// <summary>
@@ -131,7 +122,14 @@ namespace QuestSystem
             set => reward = value;
         }
 
-        public Quest(string name, string description, int duration, string type, List<string> requirements, Status questStatus)
+        public Quest(string name, string description, QuestTypes type)
+        {
+            Name = name;
+            Description = description;
+            Type = type;
+        }
+        
+        public Quest(string name, string description, int duration, QuestTypes type, List<string> requirements, Status questStatus)
         {
             Name = name;
             Description = description;
