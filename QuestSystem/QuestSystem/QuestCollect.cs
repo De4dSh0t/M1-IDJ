@@ -18,7 +18,7 @@ namespace QuestSystem
         /// Calculates quest progress in percentage
         /// </summary>
         /// <returns></returns>
-        public float Progression()
+        public float Progress()
         {
             int count = 0;
 

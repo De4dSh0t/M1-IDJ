@@ -1,7 +1,7 @@
 ﻿namespace QuestSystem
 {
     /// <summary>
-    /// Interface used to provide compatibility with class "QuestKill"
+    /// Interface used to provide compatibility with class "QuestKill" and "QuestProtect"
     /// </summary>
     public interface IKillable
     {
