@@ -22,9 +22,9 @@ namespace QuestSystem
         {
             int count = 0;
 
-            for (int i = 0; i < Items.Count; i++)
+            foreach (var item in Items)
             {
-                if (Items[i].HasBeenCollected)
+                if (item.HasBeenCollected)
                 {
                     count++;
                 }

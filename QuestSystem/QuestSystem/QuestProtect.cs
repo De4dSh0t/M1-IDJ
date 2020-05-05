@@ -18,9 +18,9 @@ namespace QuestSystem
         {
             int count = 0;
 
-            for (int i = 0; i < Entities.Count; i++)
+            foreach (var entity in Entities)
             {
-                if (Entities[i].HasArrived)
+                if (entity.HasArrived)
                 {
                     count++;
                 }

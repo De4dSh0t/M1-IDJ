@@ -24,9 +24,9 @@ namespace QuestSystem
             int count = 0;
             
             //Goes through the entire list "Entities", to verify if an entity is dead. If so, count++.
-            for (int i = 0; i < Entities.Count; i++)
+            foreach (var entity in Entities)
             {
-                if (Entities[i].IsDead) //If the specified entity is dead, then count++
+                if (entity.IsDead) //If the specified entity is dead, then count++
                 {
                     count++;
                 }

@@ -25,12 +25,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0924c15c-810d-4a65-8862-26dea10ce17e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/QuestSystem/IProtectable.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/QuestSystem/QuestProtect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestSystem/IKillable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/IKillable.cs" afterDir="false" />
-    </list>
+    <list default="true" id="0924c15c-810d-4a65-8862-26dea10ce17e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +53,8 @@
     <setting file="mock:///IKillable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/QuestProtect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/IProtectable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///IKillable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///QuestCollect.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -74,12 +71,12 @@
         <option value="$PROJECT_DIR$/QuestSystem/Program.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/QuestTypes.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/QuestKill.cs" />
-        <option value="$PROJECT_DIR$/QuestSystem/QuestCollect.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/ICollectable.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/QuestGiver.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/IKillable.cs" />
-        <option value="$PROJECT_DIR$/QuestSystem/QuestProtect.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/IProtectable.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/QuestCollect.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/QuestProtect.cs" />
       </list>
     </option>
   </component>
@@ -133,7 +130,7 @@
       <workItem from="1588177905332" duration="614000" />
       <workItem from="1588598449021" duration="8849000" />
       <workItem from="1588624768552" duration="4335000" />
-      <workItem from="1588687438973" duration="3803000" />
+      <workItem from="1588687438973" duration="4119000" />
     </task>
     <task id="LOCAL-00001" summary="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)">
       <created>1587494047762</created>
@@ -289,7 +286,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588689374404</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="QuestSystem v0.4.1 (Updated &quot;IKillable&quot; and &quot;QuestCollect&quot;)">
+      <created>1588691529472</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1588691529472</updated>
+    </task>
+    <task id="LOCAL-00024" summary="QuestSystem v0.5.0 (Added &quot;IProtectable&quot; and &quot;QuestProtect&quot;)">
+      <created>1588691558369</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1588691558369</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,7 +355,9 @@
     <MESSAGE value="QuestSystem v0.3.2 (Updated &quot;IKillable&quot; and &quot;QuestKill&quot; logic)" />
     <MESSAGE value="QuestSystem v0.3.3 (Updated &quot;IKillable&quot; and &quot;QuestKill&quot; summary)" />
     <MESSAGE value="QuestSystem v0.4.0 (Added &quot;ICollectable&quot; and &quot;QuestCollect&quot;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem v0.4.0 (Added &quot;ICollectable&quot; and &quot;QuestCollect&quot;)" />
+    <MESSAGE value="QuestSystem v0.4.1 (Updated &quot;IKillable&quot; and &quot;QuestCollect&quot;)" />
+    <MESSAGE value="QuestSystem v0.5.0 (Added &quot;IProtectable&quot; and &quot;QuestProtect&quot;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem v0.5.0 (Added &quot;IProtectable&quot; and &quot;QuestProtect&quot;)" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1431" height="304" key="GridCell.Tab.0.bottom" timestamp="1588629557858">
@@ -439,9 +452,9 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="155" y="93" width="1288" height="678" key="VCS.FileHistoryDialog/62.0.1474.864@62.0.1474.864" timestamp="1588088867807" />
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588689379496">
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588691567763">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1588689379496" />
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1588691567763" />
   </component>
 </project>
