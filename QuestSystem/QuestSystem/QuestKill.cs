@@ -5,6 +5,9 @@ namespace QuestSystem
 {
     public class QuestKill : Quest
     {
+        /// <summary>
+        /// List of all the entities intended to be killed
+        /// </summary>
         public List<IKillable> Entities { get; set; }
         
         public QuestKill(string name, string description, QuestTypes type, List<IKillable> entities) : base(name, description, type)
