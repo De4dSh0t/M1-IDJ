@@ -13,23 +13,6 @@ namespace QuestSystem
         }
 
         /// <summary>
-        /// Returns a bool (False -> "Not Dead" | True -> "Dead")
-        /// </summary>
-        /// <returns></returns>
-        public bool IsDead()
-        {
-            for (int i = 0; i < Entities.Count; i++)
-            {
-                if (Entities[i].Heatlh <= 0)
-                {
-                    return true;
-                }
-            }
-
-            return false;
-        }
-
-        /// <summary>
         /// Calculates quest progress in percentage
         /// </summary>
         /// <returns></returns>
@@ -37,9 +20,10 @@ namespace QuestSystem
         {
             int count = 0;
             
+            //Goes through the entire list "Entities", to verify if an entity is dead. If so, count++.
             for (int i = 0; i < Entities.Count; i++)
             {
-                if (Entities[i].IsDead())
+                if (Entities[i].IsDead) //If the specified entity is dead, then count++
                 {
                     count++;
                 }

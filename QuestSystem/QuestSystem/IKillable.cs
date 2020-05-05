@@ -2,8 +2,6 @@
 {
     public interface IKillable
     {
-        public int Heatlh { get; set; }
-        
-        public bool IsDead();
+        public bool IsDead { get; set; }
     }
 }

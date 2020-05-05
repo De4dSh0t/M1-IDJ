@@ -27,9 +27,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0924c15c-810d-4a65-8862-26dea10ce17e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestSystem/IKillable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/IKillable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestSystem/Kill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/Kill.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestSystem/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestSystem/QuestKill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/QuestKill.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +47,7 @@
     <setting file="file://$PROJECT_DIR$/QuestSystem/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/Quest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/QuestTypes.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/QuestSystem/Kill.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QuestSystem/QuestKill.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/Reward.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/IKillable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/Status.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,8 +65,9 @@
         <option value="$PROJECT_DIR$/QuestSystem/Reward.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/Monster.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/Program.cs" />
-        <option value="$PROJECT_DIR$/QuestSystem/Kill.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/IKillable.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/Kill.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/QuestKill.cs" />
       </list>
     </option>
   </component>
@@ -121,7 +120,7 @@
       <workItem from="1588087200613" duration="10608000" />
       <workItem from="1588177905332" duration="614000" />
       <workItem from="1588598449021" duration="8849000" />
-      <workItem from="1588624768552" duration="3564000" />
+      <workItem from="1588624768552" duration="4335000" />
     </task>
     <task id="LOCAL-00001" summary="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)">
       <created>1587494047762</created>
@@ -249,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588610248687</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="QuestSystem v0.3.1 (Updated &quot;IKillable&quot; and class &quot;QuestKill&quot; [renamed])">
+      <created>1588628956983</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1588628956983</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,89 +306,90 @@
     <MESSAGE value="QuestSystem v0.2.8 (Changed comments to summary and added property &quot;Reward&quot; to the &quot;Quest&quot; class)" />
     <MESSAGE value="QuestSystem v0.2.9 (Added Enum &quot;QuestTypes&quot; and changed property &quot;Type&quot; from &quot;Quest&quot; class)" />
     <MESSAGE value="QuestSystem v0.3.0 (Added class &quot;Kill&quot; and Interface &quot;IKillable&quot;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem v0.3.0 (Added class &quot;Kill&quot; and Interface &quot;IKillable&quot;)" />
+    <MESSAGE value="QuestSystem v0.3.1 (Updated &quot;IKillable&quot; and class &quot;QuestKill&quot; [renamed])" />
+    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem v0.3.1 (Updated &quot;IKillable&quot; and class &quot;QuestKill&quot; [renamed])" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1588628633049">
+    <state width="1431" height="304" key="GridCell.Tab.0.bottom" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588628633049" />
-    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1588628633049">
+    <state width="1431" height="304" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.0.center" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1588628633049" />
-    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1588628633049">
+    <state width="1431" height="304" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.0.left" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1588628633049" />
-    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1588628633049">
+    <state width="1431" height="304" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.0.right" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1588628633049" />
-    <state width="1431" height="304" key="GridCell.Tab.1.bottom" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.1.bottom" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
-    <state width="1431" height="304" key="GridCell.Tab.1.center" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.1.center" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
-    <state width="1431" height="304" key="GridCell.Tab.1.left" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.1.left" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
-    <state width="1431" height="304" key="GridCell.Tab.1.right" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.1.right" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
-    <state width="1431" height="304" key="GridCell.Tab.2.bottom" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.2.bottom" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
-    <state width="1431" height="304" key="GridCell.Tab.2.center" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.2.center" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
-    <state width="1431" height="304" key="GridCell.Tab.2.left" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.2.left" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
-    <state width="1431" height="304" key="GridCell.Tab.2.right" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.2.right" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
-    <state width="1431" height="304" key="GridCell.Tab.3.bottom" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.3.bottom" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.3.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
-    <state width="1431" height="304" key="GridCell.Tab.3.center" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.3.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.3.center" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.3.center/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
-    <state width="1431" height="304" key="GridCell.Tab.3.left" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.3.center/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.3.left" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.3.left/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
-    <state width="1431" height="304" key="GridCell.Tab.3.right" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.3.left/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.3.right" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.3.right/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
-    <state width="1431" height="304" key="GridCell.Tab.4.bottom" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.3.right/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.4.bottom" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.4.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
-    <state width="1431" height="304" key="GridCell.Tab.4.center" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.4.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.4.center" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.4.center/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
-    <state width="1431" height="304" key="GridCell.Tab.4.left" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.4.center/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.4.left" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.4.left/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
-    <state width="1431" height="304" key="GridCell.Tab.4.right" timestamp="1588628595245">
+    <state width="1431" height="304" key="GridCell.Tab.4.left/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.4.right" timestamp="1588629557858">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.4.right/62.0.1474.864@62.0.1474.864" timestamp="1588628595245" />
+    <state width="1431" height="304" key="GridCell.Tab.4.right/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
     <state x="628" y="118" key="RiderGenerateDialog" timestamp="1588627957801">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -395,9 +402,9 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="155" y="93" width="1288" height="678" key="VCS.FileHistoryDialog/62.0.1474.864@62.0.1474.864" timestamp="1588088867807" />
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588610250575">
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588628958498">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1588610250575" />
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1588628958498" />
   </component>
 </project>
