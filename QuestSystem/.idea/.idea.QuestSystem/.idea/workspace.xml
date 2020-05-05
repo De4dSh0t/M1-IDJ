@@ -26,8 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0924c15c-810d-4a65-8862-26dea10ce17e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/QuestSystem/ICollectable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestSystem/QuestCollect.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestSystem/QuestKill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/QuestKill.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestSystem/IKillable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/IKillable.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,13 +45,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QuestSystem/QuestCollect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/Quest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/QuestTypes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/QuestKill.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/Reward.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/IKillable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QuestSystem/ICollectable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/Status.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -60,14 +63,16 @@
         <option value="$PROJECT_DIR$/QuestSystem/MainQuest.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/Status.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/Requirements.cs" />
-        <option value="$PROJECT_DIR$/QuestSystem/QuestTypes.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/Quest.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/Reward.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/Monster.cs" />
-        <option value="$PROJECT_DIR$/QuestSystem/Program.cs" />
-        <option value="$PROJECT_DIR$/QuestSystem/IKillable.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/Kill.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/QuestKill.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/IKillable.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/Program.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/QuestTypes.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/ICollectable.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/QuestCollect.cs" />
       </list>
     </option>
   </component>
@@ -121,6 +126,7 @@
       <workItem from="1588177905332" duration="614000" />
       <workItem from="1588598449021" duration="8849000" />
       <workItem from="1588624768552" duration="4335000" />
+      <workItem from="1588687438973" duration="1616000" />
     </task>
     <task id="LOCAL-00001" summary="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)">
       <created>1587494047762</created>
@@ -255,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588628956983</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="QuestSystem v0.3.2 (Updated &quot;IKillable&quot; and &quot;QuestKill&quot; logic)">
+      <created>1588687762673</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1588687762673</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +320,8 @@
     <MESSAGE value="QuestSystem v0.2.9 (Added Enum &quot;QuestTypes&quot; and changed property &quot;Type&quot; from &quot;Quest&quot; class)" />
     <MESSAGE value="QuestSystem v0.3.0 (Added class &quot;Kill&quot; and Interface &quot;IKillable&quot;)" />
     <MESSAGE value="QuestSystem v0.3.1 (Updated &quot;IKillable&quot; and class &quot;QuestKill&quot; [renamed])" />
-    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem v0.3.1 (Updated &quot;IKillable&quot; and class &quot;QuestKill&quot; [renamed])" />
+    <MESSAGE value="QuestSystem v0.3.2 (Updated &quot;IKillable&quot; and &quot;QuestKill&quot; logic)" />
+    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem v0.3.2 (Updated &quot;IKillable&quot; and &quot;QuestKill&quot; logic)" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1431" height="304" key="GridCell.Tab.0.bottom" timestamp="1588629557858">
@@ -390,10 +404,10 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state width="1431" height="304" key="GridCell.Tab.4.right/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state x="628" y="118" key="RiderGenerateDialog" timestamp="1588627957801">
+    <state x="628" y="118" key="RiderGenerateDialog" timestamp="1588688737923">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="628" y="118" key="RiderGenerateDialog/62.0.1474.864@62.0.1474.864" timestamp="1588627957801" />
+    <state x="628" y="118" key="RiderGenerateDialog/62.0.1474.864@62.0.1474.864" timestamp="1588688737923" />
     <state x="308" y="77" key="SettingsEditor" timestamp="1588602077344">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -402,9 +416,9 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="155" y="93" width="1288" height="678" key="VCS.FileHistoryDialog/62.0.1474.864@62.0.1474.864" timestamp="1588088867807" />
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588628958498">
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588687764002">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1588628958498" />
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1588687764002" />
   </component>
 </project>
