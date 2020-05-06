@@ -5,11 +5,19 @@ namespace QuestSystem
     public class QuestCollect : Quest
     {
         /// <summary>
+        /// "Type" property override (Helpfull in deserialization)
+        /// </summary>
+        public override string Type
+        {
+            get => "QuestCollect";
+        }
+
+        /// <summary>
         /// List of all the items intended to be collected
         /// </summary>
         public List<ICollectable> Items { get; set; }
         
-        public QuestCollect(string name, string description, QuestTypes type, List<ICollectable> items) : base(name, description, type)
+        public QuestCollect(string name, string description, string type, List<ICollectable> items) : base(name, description, type)
         {
             Items = items;
         }

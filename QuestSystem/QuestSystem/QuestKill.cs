@@ -6,11 +6,19 @@ namespace QuestSystem
     public class QuestKill : Quest
     {
         /// <summary>
+        /// "Type" property override (Helpfull in deserialization)
+        /// </summary>
+        public override string Type
+        {
+            get => "QuestKill";
+        }
+        
+        /// <summary>
         /// List of all the entities intended to be killed
         /// </summary>
         public List<IKillable> Entities { get; set; }
         
-        public QuestKill(string name, string description, QuestTypes type, List<IKillable> entities) : base(name, description, type)
+        public QuestKill(string name, string description, string type, List<IKillable> entities) : base(name, description, type)
         {
             Entities = entities;
         }

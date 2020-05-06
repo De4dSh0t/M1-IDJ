@@ -10,7 +10,7 @@ namespace QuestSystem
             Quest q = new Quest("Timer Test", 
                 "Quest para testar o Timer", 
                 10000, 
-                QuestTypes.MAIN, 
+                "QuestKill", 
                 new List<string> { "DEV", "FARMER", "OFFICER" },
                 Status.INACTIVE);
         }

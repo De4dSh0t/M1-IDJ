@@ -10,7 +10,8 @@ namespace QuestSystem
         private string name;
         private string description;
         private int duration;
-        private QuestTypes type;
+        private string type;
+        private bool isMain;
         private List<string> requirements;
         private Status questStatus;
         private Reward reward;
@@ -70,14 +71,23 @@ namespace QuestSystem
         }
 
         /// <summary>
-        /// Quest Type Property (ENUM -> Main Quest/Side Quest/Event)
+        /// Quest Type Property (QuestKill/QuestCollect/QuestEscort)
         /// </summary>
-        public QuestTypes Type
+        public virtual string Type
         {
             get => type;
             set => type = value;
         }
 
+        /// <summary>
+        /// Property that defines if the quest is either a Main Quest or a Side Quest
+        /// </summary>
+        public bool IsMain
+        {
+            get => isMain;
+            set => isMain = value;
+        }
+        
         /// <summary>
         /// Quest Requirements Property (Class/Item/Level)
         /// </summary>
@@ -122,14 +132,14 @@ namespace QuestSystem
             set => reward = value;
         }
 
-        public Quest(string name, string description, QuestTypes type)
+        public Quest(string name, string description, string type)
         {
             Name = name;
             Description = description;
             Type = type;
         }
         
-        public Quest(string name, string description, int duration, QuestTypes type, List<string> requirements, Status questStatus)
+        public Quest(string name, string description, int duration, string type, List<string> requirements, Status questStatus)
         {
             Name = name;
             Description = description;
@@ -142,7 +152,7 @@ namespace QuestSystem
         /// <summary>
         /// Method used to control the time of the quest
         /// </summary>
-        private void QuestTimer()
+        public void QuestTimer()
         {
             Timer timer = new Timer();
 

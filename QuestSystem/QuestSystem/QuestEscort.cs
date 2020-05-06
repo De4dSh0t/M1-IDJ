@@ -5,11 +5,19 @@ namespace QuestSystem
     public class QuestEscort : Quest
     {
         /// <summary>
+        /// "Type" property override (Helpfull in deserialization)
+        /// </summary>
+        public override string Type
+        {
+            get => "QuestEscort";
+        }
+        
+        /// <summary>
         /// List of all the entities intended to be escorted/protected
         /// </summary>
         public List<IProtectable> Entities { get; set; }
         
-        public QuestEscort(string name, string description, QuestTypes type, List<IProtectable> entities) : base(name, description, type)
+        public QuestEscort(string name, string description, string type, List<IProtectable> entities) : base(name, description, type)
         {
             Entities = entities;
         }
