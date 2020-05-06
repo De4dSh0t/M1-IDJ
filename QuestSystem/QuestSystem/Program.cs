@@ -7,9 +7,10 @@ namespace QuestSystem
     {
         static void Main(string[] args)
         {
-            Quest q = new Quest();
-            q.Name = "Teste";
-            q.Description = "Testar throws";
+            JsonWriter jsonWriter = new JsonWriter();
+            jsonWriter.Write();
+            QuestManager questManager = new QuestManager();
+            questManager.ReadJson("quests.json");
         }
     }
 }

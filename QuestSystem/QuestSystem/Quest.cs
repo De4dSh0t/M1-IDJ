@@ -45,9 +45,9 @@ namespace QuestSystem
             get => duration;
             set
             {
-                if (value <= 0)
+                if (value > 0 && QuestStatus == Status.ACTIVE)
                 {
-                    throw new ArgumentException("Seems like there is no duration for this quest...");
+                    QuestTimer();
                 }
 
                 duration = value;
@@ -79,15 +79,7 @@ namespace QuestSystem
         public List<string> Requirements
         {
             get => requirements;
-            set
-            {
-                if (value.Count == 0)
-                {
-                    throw new ArgumentException("Insert a requirement.");
-                }
-                
-                requirements = value;
-            }
+            set => requirements = value;
         }
 
         /// <summary>
@@ -96,15 +88,7 @@ namespace QuestSystem
         public Status QuestStatus
         {
             get => questStatus;
-            set
-            {
-                if (questStatus == Status.ACTIVE)
-                {
-                    QuestTimer();
-                }
-
-                questStatus = value;
-            }
+            set => questStatus = value;
         }
 
         /// <summary>

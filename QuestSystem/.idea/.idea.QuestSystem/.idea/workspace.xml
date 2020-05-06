@@ -26,9 +26,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0924c15c-810d-4a65-8862-26dea10ce17e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/QuestSystem/JsonWriter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestSystem/QuestManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/QuestSystem/Slime.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestSystem/JsonSerializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/JsonDeserializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestSystem/QuestSerializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/QuestDeserializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestSystem/JsonDeserializer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestSystem/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestSystem/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/Quest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestSystem/QuestDeserializer.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +59,10 @@
     <setting file="file://$PROJECT_DIR$/QuestSystem/Status.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/QuestEscort.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/IProtectable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/QuestSystem/QuestDeserializer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/QuestSystem/JsonDeserializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QuestSystem/QuestManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/20735148-1523-4917-A5E8-F91B0B239405/54/JsonSerializerInternalReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QuestSystem/Slime.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/QuestSystem/JsonWriter.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -74,13 +81,21 @@
         <option value="$PROJECT_DIR$/QuestSystem/QuestProtect.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/IProtectable.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/Reward.cs" />
-        <option value="$PROJECT_DIR$/QuestSystem/Program.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/QuestKill.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/QuestCollect.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/QuestEscort.cs" />
-        <option value="$PROJECT_DIR$/QuestSystem/Quest.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/JsonSerializer.cs" />
         <option value="$PROJECT_DIR$/QuestSystem/QuestSerializer.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/Slime.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/JsonDeserializer.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/WriteJson.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/ReadJson.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/JsonParser.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/Quest.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/QuestDeserializer.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/QuestManager.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/Program.cs" />
+        <option value="$PROJECT_DIR$/QuestSystem/JsonWriter.cs" />
       </list>
     </option>
   </component>
@@ -136,7 +151,7 @@
       <workItem from="1588624768552" duration="4335000" />
       <workItem from="1588687438973" duration="5423000" />
       <workItem from="1588704990936" duration="575000" />
-      <workItem from="1588775388189" duration="10819000" />
+      <workItem from="1588775388189" duration="14185000" />
     </task>
     <task id="LOCAL-00001" summary="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)">
       <created>1587494047762</created>
@@ -341,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588786714127</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="QuestSystem 0.6.1 (Renamed &quot;JsonDeserializer&quot; and &quot;QuestDeserializer&quot;)">
+      <created>1588787726587</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1588787726587</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +397,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="QuestSystem v0.2.1 (Updated &quot;Quest&quot; and &quot;Reward&quot;)" />
     <MESSAGE value="QuestSystem v0.3 (Added &quot;MainQuest&quot; class)" />
     <MESSAGE value="QuestSystem v0.4 (Added &quot;SideQuest&quot; class)" />
     <MESSAGE value="QuestSystem 0.2 [Restart] (Removed &quot;MainQuest&quot; and &quot;SideQuest&quot;)" />
@@ -400,93 +421,94 @@
     <MESSAGE value="QuestSystem 0.5.3 (Updated &quot;QuestCollect&quot;, &quot;QuestEscort&quot; and &quot;QuestKill&quot; with method &quot;IsCompleted()&quot;)" />
     <MESSAGE value="QuestSystem 0.5.4 (Updated &quot;QuestCollect&quot;, &quot;QuestEscort&quot;, &quot;QuestKill&quot; and &quot;Quest&quot; to be mor friendly with the deserializer)" />
     <MESSAGE value="QuestSystem 0.6.0 (Added custom &quot;JsonSerializer&quot; and &quot;QuestSerializer&quot; to handle inherited classes and Updated all classes constructors)" />
-    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem 0.6.0 (Added custom &quot;JsonSerializer&quot; and &quot;QuestSerializer&quot; to handle inherited classes and Updated all classes constructors)" />
+    <MESSAGE value="QuestSystem 0.6.1 (Renamed &quot;JsonDeserializer&quot; and &quot;QuestDeserializer&quot;)" />
+    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem 0.6.1 (Renamed &quot;JsonDeserializer&quot; and &quot;QuestDeserializer&quot;)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="155" y="93" width="1288" height="678" key="DiffContextDialog" timestamp="1588782044268">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="155" y="93" width="1288" height="678" key="DiffContextDialog/62.0.1474.864@62.0.1474.864" timestamp="1588782044268" />
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom" timestamp="1588786600689">
+    <state width="1431" height="304" key="GridCell.Tab.0.bottom" timestamp="1588790870508">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588786600689" />
-    <state width="1431" height="224" key="GridCell.Tab.0.center" timestamp="1588786600689">
+    <state width="1431" height="304" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588790870508" />
+    <state width="1431" height="304" key="GridCell.Tab.0.center" timestamp="1588790870508">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1588786600689" />
-    <state width="1431" height="224" key="GridCell.Tab.0.left" timestamp="1588786600688">
+    <state width="1431" height="304" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1588790870508" />
+    <state width="1431" height="304" key="GridCell.Tab.0.left" timestamp="1588790870508">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1588786600688" />
-    <state width="1431" height="224" key="GridCell.Tab.0.right" timestamp="1588786600689">
+    <state width="1431" height="304" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1588790870508" />
+    <state width="1431" height="304" key="GridCell.Tab.0.right" timestamp="1588790870508">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="224" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1588786600689" />
-    <state width="1431" height="304" key="GridCell.Tab.1.bottom" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1588790870508" />
+    <state width="1431" height="304" key="GridCell.Tab.1.bottom" timestamp="1588790870509">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state width="1431" height="304" key="GridCell.Tab.1.center" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588790870509" />
+    <state width="1431" height="304" key="GridCell.Tab.1.center" timestamp="1588790870509">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state width="1431" height="304" key="GridCell.Tab.1.left" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1588790870509" />
+    <state width="1431" height="304" key="GridCell.Tab.1.left" timestamp="1588790870509">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state width="1431" height="304" key="GridCell.Tab.1.right" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1588790870509" />
+    <state width="1431" height="304" key="GridCell.Tab.1.right" timestamp="1588790870509">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state width="1431" height="304" key="GridCell.Tab.2.bottom" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1588790870509" />
+    <state width="1431" height="304" key="GridCell.Tab.2.bottom" timestamp="1588790870509">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state width="1431" height="304" key="GridCell.Tab.2.center" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588790870509" />
+    <state width="1431" height="304" key="GridCell.Tab.2.center" timestamp="1588790870509">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state width="1431" height="304" key="GridCell.Tab.2.left" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1588790870509" />
+    <state width="1431" height="304" key="GridCell.Tab.2.left" timestamp="1588790870509">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state width="1431" height="304" key="GridCell.Tab.2.right" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1588790870509" />
+    <state width="1431" height="304" key="GridCell.Tab.2.right" timestamp="1588790870509">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state width="1431" height="304" key="GridCell.Tab.3.bottom" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1588790870509" />
+    <state width="1431" height="304" key="GridCell.Tab.3.bottom" timestamp="1588790870510">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.3.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state width="1431" height="304" key="GridCell.Tab.3.center" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.3.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588790870510" />
+    <state width="1431" height="304" key="GridCell.Tab.3.center" timestamp="1588790870509">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.3.center/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state width="1431" height="304" key="GridCell.Tab.3.left" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.3.center/62.0.1474.864@62.0.1474.864" timestamp="1588790870509" />
+    <state width="1431" height="304" key="GridCell.Tab.3.left" timestamp="1588790870509">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.3.left/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state width="1431" height="304" key="GridCell.Tab.3.right" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.3.left/62.0.1474.864@62.0.1474.864" timestamp="1588790870509" />
+    <state width="1431" height="304" key="GridCell.Tab.3.right" timestamp="1588790870509">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.3.right/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state width="1431" height="304" key="GridCell.Tab.4.bottom" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.3.right/62.0.1474.864@62.0.1474.864" timestamp="1588790870509" />
+    <state width="1431" height="304" key="GridCell.Tab.4.bottom" timestamp="1588790870510">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.4.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state width="1431" height="304" key="GridCell.Tab.4.center" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.4.bottom/62.0.1474.864@62.0.1474.864" timestamp="1588790870510" />
+    <state width="1431" height="304" key="GridCell.Tab.4.center" timestamp="1588790870510">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.4.center/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state width="1431" height="304" key="GridCell.Tab.4.left" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.4.center/62.0.1474.864@62.0.1474.864" timestamp="1588790870510" />
+    <state width="1431" height="304" key="GridCell.Tab.4.left" timestamp="1588790870510">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.4.left/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
-    <state width="1431" height="304" key="GridCell.Tab.4.right" timestamp="1588629557858">
+    <state width="1431" height="304" key="GridCell.Tab.4.left/62.0.1474.864@62.0.1474.864" timestamp="1588790870510" />
+    <state width="1431" height="304" key="GridCell.Tab.4.right" timestamp="1588790870510">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1431" height="304" key="GridCell.Tab.4.right/62.0.1474.864@62.0.1474.864" timestamp="1588629557858" />
+    <state width="1431" height="304" key="GridCell.Tab.4.right/62.0.1474.864@62.0.1474.864" timestamp="1588790870510" />
     <state x="628" y="118" key="RiderGenerateDialog" timestamp="1588690878850">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -499,10 +521,10 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="155" y="93" width="1288" height="678" key="VCS.FileHistoryDialog/62.0.1474.864@62.0.1474.864" timestamp="1588088867807" />
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588786715414">
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588787727910">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1588786715414" />
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1588787727910" />
     <state x="462" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1588785987357">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
