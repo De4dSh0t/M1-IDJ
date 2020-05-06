@@ -16,8 +16,14 @@ namespace QuestSystem
         /// List of all the entities intended to be escorted/protected
         /// </summary>
         public List<IProtectable> Entities { get; set; }
+
+        public QuestEscort()
+        {
+            Name = "";
+            Description = "";
+        }
         
-        public QuestEscort(string name, string description, string type, List<IProtectable> entities) : base(name, description, type)
+        public QuestEscort(string name, string description, List<IProtectable> entities) : base(name, description)
         {
             Entities = entities;
         }

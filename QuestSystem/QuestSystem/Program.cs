@@ -7,12 +7,9 @@ namespace QuestSystem
     {
         static void Main(string[] args)
         {
-            Quest q = new Quest("Timer Test", 
-                "Quest para testar o Timer", 
-                10000, 
-                "QuestKill", 
-                new List<string> { "DEV", "FARMER", "OFFICER" },
-                Status.INACTIVE);
+            Quest q = new Quest();
+            q.Name = "Teste";
+            q.Description = "Testar throws";
         }
     }
 }

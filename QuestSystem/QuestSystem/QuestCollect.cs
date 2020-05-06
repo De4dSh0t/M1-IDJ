@@ -16,8 +16,14 @@ namespace QuestSystem
         /// List of all the items intended to be collected
         /// </summary>
         public List<ICollectable> Items { get; set; }
-        
-        public QuestCollect(string name, string description, string type, List<ICollectable> items) : base(name, description, type)
+
+        public QuestCollect()
+        {
+            Name = "";
+            Description = "";
+        }
+
+        public QuestCollect(string name, string description, List<ICollectable> items) : base(name, description)
         {
             Items = items;
         }

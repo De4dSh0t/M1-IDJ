@@ -17,8 +17,14 @@ namespace QuestSystem
         /// List of all the entities intended to be killed
         /// </summary>
         public List<IKillable> Entities { get; set; }
+
+        public QuestKill()
+        {
+            Name = "";
+            Description = "";
+        }
         
-        public QuestKill(string name, string description, string type, List<IKillable> entities) : base(name, description, type)
+        public QuestKill(string name, string description, List<IKillable> entities) : base(name, description)
         {
             Entities = entities;
         }

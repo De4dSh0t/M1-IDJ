@@ -23,15 +23,7 @@ namespace QuestSystem
         public string Name
         {
             get => name;
-            set
-            {
-                if (string.IsNullOrWhiteSpace(value))
-                {
-                    throw new ArgumentException("Insert a name.");
-                }
-
-                name = value;
-            }
+            set => name = value;
         }
 
         /// <summary>
@@ -41,15 +33,7 @@ namespace QuestSystem
         public string Description
         {
             get => description;
-            set
-            {
-                if (string.IsNullOrWhiteSpace(value))
-                {
-                    throw new ArgumentException("Insert a description.");
-                }
-
-                description = value;
-            }
+            set => description = value;
         }
 
         /// <summary>
@@ -132,7 +116,14 @@ namespace QuestSystem
             set => reward = value;
         }
 
-        public Quest(string name, string description, string type)
+
+        public Quest()
+        {
+            Name = "";
+            Description = "";
+        }
+        
+        public Quest(string name, string description)
         {
             Name = name;
             Description = description;
