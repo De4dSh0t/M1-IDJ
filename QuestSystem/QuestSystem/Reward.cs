@@ -4,25 +4,17 @@ namespace QuestSystem
 {
     public class Reward
     {
-        private string type;
+        private object type;
         private float quantity; //Representa a quantidade da recompensa
 
         /// <summary>
         /// Reward Type (Money/Exp/Item)
         /// </summary>
         /// <exception cref="ArgumentException"></exception>
-        public string Type
+        public object Type
         {
             get => type;
-            set
-            {
-                if (string.IsNullOrWhiteSpace(value))
-                {
-                    throw new ArgumentException("Insert a type name.");
-                }
-
-                type = value;
-            }
+            set => type = value;
         }
         
         /// <summary>

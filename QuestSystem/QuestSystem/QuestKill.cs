@@ -34,5 +34,19 @@ namespace QuestSystem
 
             return (100 / Entities.Count) * count;
         }
+
+        /// <summary>
+        /// Method used to verify and update the status of the quest
+        /// </summary>
+        public bool IsCompleted()
+        {
+            if (Progress() >= 100)
+            {
+                QuestStatus = Status.DONE;
+                return true;
+            }
+
+            return false;
+        }
     }
 }
