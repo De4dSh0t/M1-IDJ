@@ -4,7 +4,7 @@ using Newtonsoft.Json.Linq;
 
 namespace QuestSystem
 {
-    public abstract class JsonSerializer<T> : JsonConverter
+    public abstract class JsonDeserializer<T> : JsonConverter
     {
         /// <summary>
         /// Creates a custom Json Object of type "objectType"

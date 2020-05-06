@@ -3,7 +3,7 @@ using Newtonsoft.Json.Linq;
 
 namespace QuestSystem
 {
-    public class QuestSerializer : JsonSerializer<Quest>
+    public class QuestDeserializer : JsonDeserializer<Quest>
     {
         protected override Quest Create(Type objectType, JObject jsonObject)
         {
