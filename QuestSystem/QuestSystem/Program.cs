@@ -18,6 +18,8 @@ namespace QuestSystem
             questKill.Entities[2].IsDead = true;
             Console.WriteLine(questKill.Progress());
             Console.WriteLine(questKill.IsCompleted());
+            Console.WriteLine(questManager.InactiveQuests().Count);
+            Console.WriteLine(questManager.CompletedQuests().Count);
         }
     }
 }
