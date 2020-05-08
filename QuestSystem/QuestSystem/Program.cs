@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace QuestSystem
 {
@@ -11,6 +10,14 @@ namespace QuestSystem
             jsonWriter.Write();
             QuestManager questManager = new QuestManager();
             questManager.ReadJson("quests.json");
+            Type type = questManager.quest[0].GetType();
+
+            var questKill = (QuestKill) questManager.quest[0];
+            questKill.Entities[0].IsDead = true;
+            questKill.Entities[1].IsDead = true;
+            questKill.Entities[2].IsDead = true;
+            Console.WriteLine(questKill.Progress());
+            Console.WriteLine(questKill.IsCompleted());
         }
     }
 }

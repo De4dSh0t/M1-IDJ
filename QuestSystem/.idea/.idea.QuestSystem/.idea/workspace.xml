@@ -28,9 +28,7 @@
     <list default="true" id="0924c15c-810d-4a65-8862-26dea10ce17e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.QuestSystem/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/QuestSystem/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestSystem/QuestCollect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/QuestCollect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestSystem/QuestEscort.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/QuestEscort.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuestSystem/QuestKill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/QuestKill.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuestSystem/QuestManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/QuestSystem/QuestManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +56,7 @@
     <setting file="file://$PROJECT_DIR$/QuestSystem/IProtectable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/QuestManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/20735148-1523-4917-A5E8-F91B0B239405/54/JsonSerializerInternalReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/Slime.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/QuestSystem/JsonWriter.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -150,7 +149,7 @@
       <workItem from="1588687438973" duration="5423000" />
       <workItem from="1588704990936" duration="575000" />
       <workItem from="1588775388189" duration="14432000" />
-      <workItem from="1588945079974" duration="3126000" />
+      <workItem from="1588945079974" duration="4119000" />
     </task>
     <task id="LOCAL-00001" summary="QuestSystem v0.1 (Created Project and Added &quot;Quest()&quot;)">
       <created>1587494047762</created>
@@ -369,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588791010239</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="QuestSystem 0.7.1 (Updated &quot;Progress()&quot; in all inherited classes)">
+      <created>1588948269803</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1588948269803</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,7 +409,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="QuestSystem v0.4 (Added &quot;SideQuest&quot; class)" />
     <MESSAGE value="QuestSystem 0.2 [Restart] (Removed &quot;MainQuest&quot; and &quot;SideQuest&quot;)" />
     <MESSAGE value="QuestSystem 0.2.1 (Added Enum &quot;Status&quot; and Updated &quot;Quest&quot;)" />
     <MESSAGE value="QuestSystem 0.2.2 (Updated &quot;Quest&quot; with &quot;QuestTimer() and &quot;Event()&quot;)" />
@@ -428,7 +433,8 @@
     <MESSAGE value="QuestSystem 0.6.0 (Added custom &quot;JsonSerializer&quot; and &quot;QuestSerializer&quot; to handle inherited classes and Updated all classes constructors)" />
     <MESSAGE value="QuestSystem 0.6.1 (Renamed &quot;JsonDeserializer&quot; and &quot;QuestDeserializer&quot;)" />
     <MESSAGE value="QuestSystem 0.7.0 (Removed &quot;JsonDeserializer&quot; and &quot;QuestDeserializer&quot; and Added &quot;JsonWriter&quot;, &quot;QuestManager&quot;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem 0.7.0 (Removed &quot;JsonDeserializer&quot; and &quot;QuestDeserializer&quot; and Added &quot;JsonWriter&quot;, &quot;QuestManager&quot;)" />
+    <MESSAGE value="QuestSystem 0.7.1 (Updated &quot;Progress()&quot; in all inherited classes)" />
+    <option name="LAST_COMMIT_MESSAGE" value="QuestSystem 0.7.1 (Updated &quot;Progress()&quot; in all inherited classes)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="155" y="93" width="1288" height="678" key="DiffContextDialog" timestamp="1588782044268">
@@ -527,10 +533,10 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="155" y="93" width="1288" height="678" key="VCS.FileHistoryDialog/62.0.1474.864@62.0.1474.864" timestamp="1588088867807" />
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588791011387">
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2" timestamp="1588948272203">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1588791011387" />
+    <state x="392" y="165" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1588948272203" />
     <state x="456" y="197" key="run.anything.popup" timestamp="1588946412892">
       <screen x="62" y="0" width="1474" height="864" />
     </state>

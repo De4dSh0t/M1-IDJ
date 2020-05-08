@@ -5,14 +5,6 @@ namespace QuestSystem
     public class QuestEscort : Quest
     {
         /// <summary>
-        /// "Type" property override (Helpfull in deserialization)
-        /// </summary>
-        public override string Type
-        {
-            get => "QuestEscort";
-        }
-        
-        /// <summary>
         /// List of all the entities intended to be escorted/protected
         /// </summary>
         public List<IProtectable> Entities { get; set; }

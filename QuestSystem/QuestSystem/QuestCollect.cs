@@ -5,14 +5,6 @@ namespace QuestSystem
     public class QuestCollect : Quest
     {
         /// <summary>
-        /// "Type" property override (Helpfull in deserialization)
-        /// </summary>
-        public override string Type
-        {
-            get => "QuestCollect";
-        }
-
-        /// <summary>
         /// List of all the items intended to be collected
         /// </summary>
         public List<ICollectable> Items { get; set; }

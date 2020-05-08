@@ -10,7 +10,6 @@ namespace QuestSystem
         private string name;
         private string description;
         private int duration;
-        private string type;
         private bool isMain;
         private List<string> requirements;
         private Status questStatus;
@@ -52,15 +51,6 @@ namespace QuestSystem
 
                 duration = value;
             }
-        }
-
-        /// <summary>
-        /// Quest Type Property (QuestKill/QuestCollect/QuestEscort)
-        /// </summary>
-        public virtual string Type
-        {
-            get => type;
-            set => type = value;
         }
 
         /// <summary>
@@ -111,15 +101,13 @@ namespace QuestSystem
         {
             Name = name;
             Description = description;
-            Type = type;
         }
         
-        public Quest(string name, string description, int duration, string type, List<string> requirements, Status questStatus)
+        public Quest(string name, string description, int duration, List<string> requirements, Status questStatus)
         {
             Name = name;
             Description = description;
             Duration = duration;
-            Type = type;
             Requirements = requirements;
             QuestStatus = questStatus;
         }
