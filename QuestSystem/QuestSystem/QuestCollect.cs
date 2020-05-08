@@ -32,7 +32,7 @@ namespace QuestSystem
         /// Calculates quest progress in percentage
         /// </summary>
         /// <returns></returns>
-        public float Progress()
+        public double Progress()
         {
             int count = 0;
 
@@ -44,7 +44,7 @@ namespace QuestSystem
                 }
             }
             
-            return (100 / Items.Count) * count;
+            return (double) 100 / Items.Count * count;
         }
         
         /// <summary>
