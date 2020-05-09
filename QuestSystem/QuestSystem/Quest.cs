@@ -119,8 +119,8 @@ namespace QuestSystem
         {
             Timer timer = new Timer();
 
-            timer.Interval = time; //Adiciona o tempo da quest ao intervalo do Timer
-            timer.Elapsed += Event; //Quando esse intervalo terminar, ocorre um evento ("Event()")
+            timer.Interval = time; //Adds quest time to the Timer interval
+            timer.Elapsed += Event; //When that interval ends, the "Event()" occurs
             timer.Enabled = true;
 
             if (questStatus == Status.COMPLETED || questStatus == Status.CANCELLED)
@@ -146,20 +146,20 @@ namespace QuestSystem
         /// <exception cref="ArgumentException"></exception>
         public void CheckRequirements(List<string> features)
         {
-            //Se a lista "features" não tiver a mesma quantidade de variáveis que a lista "requirements", é imediatamente cancelada
-            if (features.Count != requirements.Count)
+            //If the "features" list is shorter than the "requirements" list, than it's immediately canceled
+            if (features.Count < requirements.Count)
             {
-                throw new ArgumentException("The character doesn't have the features required!");
+                throw new ArgumentException("The player doesn't have the features required!");
             }
 
-            //Organiza as listas por ordem alfabetica/crescente
+            //Organizes lists in alphabetical/ascending order
             requirements.Sort();
             features.Sort();
 
-            //É verificado se a lista "features" não contém uma variável igual à da lista "requirements"
+            //Verifies if the "features" list doesn't contain a variable equal to the "requirements" list
             if (features.SequenceEqual(requirements, StringComparer.OrdinalIgnoreCase) == false)
             {
-                throw new ArgumentException("The character can't do this quest.");
+                throw new ArgumentException("The player can't do this quest.");
             }
         }
     }

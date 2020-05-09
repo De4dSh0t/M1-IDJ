@@ -6,14 +6,14 @@ namespace QuestSystem
     {
         static void Main(string[] args)
         {
+            //Makes the json file and reads it
             JsonWriter jsonWriter = new JsonWriter();
             jsonWriter.Write();
             QuestManager questManager = new QuestManager();
             questManager.ReadJson("quests.json");
-
-            bool end = false;
             
             //Basic program to test the QuestManager
+            bool end = false;
             while (!end)
             {
                 ConsoleKeyInfo info = Console.ReadKey();
@@ -210,61 +210,6 @@ namespace QuestSystem
                     }
                 }
             }
-
-            // Console.WriteLine("(1) Change Status");
-            // Console.WriteLine("(2) Activate Timer");
-            // Console.WriteLine("(3) Progress");
-            // Console.WriteLine("(4) Check Completion");
-            // Console.WriteLine("(0) Return to main menu");
-            //
-            // switch (info.KeyChar)
-            // {
-            //     case '1':
-            //     {
-            //         Console.WriteLine($"Current Status: {questManager.quest[i]}");
-            //         break;
-            //     }
-            //
-            //     case '2':
-            //     {
-            //         break;
-            //     }
-            //
-            //     case '3':
-            //     {
-            //         break;
-            //     }
-            //
-            //     case '4':
-            //     {
-            //         break;
-            //     }
-            //
-            //     case '0':
-            //     {
-            //         break;
-            //     }
-            //
-            //     default:
-            //     {
-            //         Console.WriteLine("Choose one of the numbers above.");
-            //         break;
-            //     }
-            // }
-            //
-            // if (info.KeyChar == '0')
-            // {
-            //                 
-            // }
-            // break;
-            // var questKill = (QuestKill) questManager.quest[0];
-            // questKill.Entities[0].IsDead = true;
-            // questKill.Entities[1].IsDead = true;
-            // questKill.Entities[2].IsDead = true;
-            // Console.WriteLine(questKill.Progress());
-            // Console.WriteLine(questKill.IsCompleted());
-            // Console.WriteLine(questManager.InactiveQuests().Count);
-            // Console.WriteLine(questManager.CompletedQuests().Count);
         }
     }
 }
