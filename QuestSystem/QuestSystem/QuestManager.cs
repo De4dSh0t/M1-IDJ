@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using System.Text;
+using System.Linq;
 using Newtonsoft.Json;
-using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace QuestSystem
 {
@@ -20,6 +19,54 @@ namespace QuestSystem
             
             JsonSerializerSettings settings = new JsonSerializerSettings() { TypeNameHandling = TypeNameHandling.All };
             quest = JsonConvert.DeserializeObject<List<Quest>>(content, settings);
+        }
+
+        /// <summary>
+        /// Creates a list of all quests of type "QuestKill"
+        /// </summary>
+        /// <returns></returns>
+        public List<QuestKill> ListQuestKill()
+        {
+            List<QuestKill> questKill = new List<QuestKill>();
+            
+            foreach (var qK in quest.OfType<QuestKill>())
+            {
+                questKill.Add(qK);
+            }
+
+            return questKill;
+        }
+        
+        /// <summary>
+        /// Creates a list of all quests of type "QuestCollect"
+        /// </summary>
+        /// <returns></returns>
+        public List<QuestCollect> ListQuestCollect()
+        {
+            List<QuestCollect> questCollect = new List<QuestCollect>();
+            
+            foreach (var qC in quest.OfType<QuestCollect>())
+            {
+                questCollect.Add(qC);
+            }
+
+            return questCollect;
+        }
+        
+        /// <summary>
+        /// Creates a list of all quests of type "QuestEscort"
+        /// </summary>
+        /// <returns></returns>
+        public List<QuestEscort> ListQuestEscort()
+        {
+            List<QuestEscort> questEscort = new List<QuestEscort>();
+            
+            foreach (var qE in quest.OfType<QuestEscort>())
+            {
+                questEscort.Add(qE);
+            }
+
+            return questEscort;
         }
 
         /// <summary>
