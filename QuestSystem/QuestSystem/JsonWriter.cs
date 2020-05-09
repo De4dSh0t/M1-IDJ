@@ -7,6 +7,9 @@ namespace QuestSystem
 {
     public class JsonWriter
     {
+        /// <summary>
+        /// Responsible for serialization
+        /// </summary>
         public void Write()
         {
             List<Quest> quests = new List<Quest>()
@@ -17,6 +20,7 @@ namespace QuestSystem
                     Description = "Try to kill 3 slimes",
                     IsMain = true,
                     QuestStatus = Status.INACTIVE,
+                    Requirements = new List<string>() {"Level 1", "Warrior"},
                     Entities = new List<IKillable>() {new Slime(), new Slime(), new Slime()}
                 },
 
@@ -26,6 +30,7 @@ namespace QuestSystem
                     Description = "Collect 3 killed slimes",
                     IsMain = true,
                     QuestStatus = Status.INACTIVE,
+                    Requirements = new List<string>() {"Level 5", "Mage"},
                     Items = new List<ICollectable>() {new Slime(), new Slime(), new Slime()}
                 },
 
@@ -33,8 +38,9 @@ namespace QuestSystem
                 {
                     Name = "Escort princess slime",
                     Description = "Escort the princess slime to her castle",
-                    IsMain = true,
-                    QuestStatus = Status.INACTIVE,
+                    IsMain = false,
+                    QuestStatus = Status.COMPLETED,
+                    Requirements = new List<string>() {"Any Level", "Any Class"},
                     Entities = new List<IProtectable>() {new Slime()}
                 }
             };

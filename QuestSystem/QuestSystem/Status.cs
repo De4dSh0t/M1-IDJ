@@ -4,7 +4,7 @@
     {
         INACTIVE,
         ACTIVE,
-        DONE,
+        COMPLETED,
         CANCELLED
     }
 }

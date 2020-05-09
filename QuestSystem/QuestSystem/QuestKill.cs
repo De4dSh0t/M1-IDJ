@@ -48,7 +48,7 @@ namespace QuestSystem
         {
             if (Progress() >= 100)
             {
-                QuestStatus = Status.DONE;
+                QuestStatus = Status.COMPLETED;
                 return true;
             }
 

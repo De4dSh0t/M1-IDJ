@@ -136,7 +136,7 @@ namespace QuestSystem
 
             foreach (var q in quest)
             {
-                if (q.QuestStatus == Status.DONE)
+                if (q.QuestStatus == Status.COMPLETED)
                 {
                     completed.Add(q);
                 }
@@ -193,7 +193,7 @@ namespace QuestSystem
 
             foreach (var q in MainQuests())
             {
-                if (q.QuestStatus == Status.DONE)
+                if (q.QuestStatus == Status.COMPLETED)
                 {
                     count++;
                 }
@@ -212,7 +212,7 @@ namespace QuestSystem
 
             foreach (var q in SideQuests())
             {
-                if (q.QuestStatus == Status.DONE)
+                if (q.QuestStatus == Status.COMPLETED)
                 {
                     count++;
                 }
@@ -231,7 +231,7 @@ namespace QuestSystem
 
             foreach (var q in quest)
             {
-                if (q.QuestStatus == Status.DONE)
+                if (q.QuestStatus == Status.COMPLETED)
                 {
                     count++;
                 }

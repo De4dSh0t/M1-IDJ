@@ -9,7 +9,7 @@ namespace QuestSystem
     {
         private string name;
         private string description;
-        private int duration;
+        private int time;
         private bool isMain;
         private List<string> requirements;
         private Status questStatus;
@@ -39,9 +39,9 @@ namespace QuestSystem
         /// Quest Duration/Timer Property
         /// </summary>
         /// <exception cref="ArgumentException"></exception>
-        public int Duration
+        public int Time
         {
-            get => duration;
+            get => time;
             set
             {
                 if (value > 0 && QuestStatus == Status.ACTIVE)
@@ -49,7 +49,7 @@ namespace QuestSystem
                     QuestTimer();
                 }
 
-                duration = value;
+                time = value;
             }
         }
 
@@ -103,11 +103,11 @@ namespace QuestSystem
             Description = description;
         }
         
-        public Quest(string name, string description, int duration, List<string> requirements, Status questStatus)
+        public Quest(string name, string description, int time, List<string> requirements, Status questStatus)
         {
             Name = name;
             Description = description;
-            Duration = duration;
+            Time = time;
             Requirements = requirements;
             QuestStatus = questStatus;
         }
@@ -119,11 +119,11 @@ namespace QuestSystem
         {
             Timer timer = new Timer();
 
-            timer.Interval = duration; //Adiciona o tempo da quest ao intervalo do Timer
+            timer.Interval = time; //Adiciona o tempo da quest ao intervalo do Timer
             timer.Elapsed += Event; //Quando esse intervalo terminar, ocorre um evento ("Event()")
             timer.Enabled = true;
 
-            if (questStatus == Status.DONE || questStatus == Status.CANCELLED)
+            if (questStatus == Status.COMPLETED || questStatus == Status.CANCELLED)
             {
                 timer.Stop();
             }
