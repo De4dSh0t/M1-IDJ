@@ -21,7 +21,8 @@ namespace QuestSystem
                     IsMain = true,
                     QuestStatus = Status.INACTIVE,
                     Requirements = new List<string>() {"Level 1", "Warrior"},
-                    Entities = new List<IKillable>() {new Slime(), new Slime(), new Slime()}
+                    Entities = new List<IKillable>() {new Slime(), new Slime(), new Slime()},
+                    Reward = new Reward(new Money(), 100)
                 },
 
                 new QuestCollect()
@@ -31,7 +32,8 @@ namespace QuestSystem
                     IsMain = true,
                     QuestStatus = Status.INACTIVE,
                     Requirements = new List<string>() {"Level 5", "Mage"},
-                    Items = new List<ICollectable>() {new Slime(), new Slime(), new Slime()}
+                    Items = new List<ICollectable>() {new Slime(), new Slime(), new Slime()},
+                    Reward = new Reward(new Money(), 50)
                 },
 
                 new QuestEscort()
@@ -41,7 +43,19 @@ namespace QuestSystem
                     IsMain = false,
                     QuestStatus = Status.COMPLETED,
                     Requirements = new List<string>() {"Any Level", "Any Class"},
-                    Entities = new List<IProtectable>() {new Slime()}
+                    Entities = new List<IProtectable>() {new Slime()},
+                    Reward = new Reward(new Money(), 150)
+                },
+                
+                new QuestDefend()
+                {
+                    Name = "Defend princess slime",
+                    Description = "Defend the princess slime from enemy attacks",
+                    IsMain = false,
+                    QuestStatus = Status.CANCELLED,
+                    Requirements = new List<string>() {"Any Level", "Warrior"},
+                    Entities = new List<IProtectable>() {new Slime()},
+                    Reward = new Reward(new Money(), 200)
                 }
             };
             

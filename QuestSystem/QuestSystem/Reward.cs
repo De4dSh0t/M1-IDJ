@@ -35,7 +35,7 @@ namespace QuestSystem
             }
         }
 
-        public Reward(string type, float quantity)
+        public Reward(object type, float quantity)
         {
             Type = type;
             Quantity = quantity;

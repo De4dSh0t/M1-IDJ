@@ -162,5 +162,19 @@ namespace QuestSystem
                 throw new ArgumentException("The player can't do this quest.");
             }
         }
+
+        /// <summary>
+        /// Check if quest is completed. If so, returns the pre-defined reward
+        /// </summary>
+        /// <returns></returns>
+        public Reward GetReward()
+        {
+            if (questStatus == Status.COMPLETED)
+            {
+                return Reward;
+            }
+
+            return null;
+        }
     }
 }

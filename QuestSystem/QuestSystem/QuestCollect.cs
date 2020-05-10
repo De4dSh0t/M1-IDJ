@@ -35,6 +35,12 @@ namespace QuestSystem
                     count++;
                 }
             }
+
+            //In case the quest is already completed, return 100%
+            if (QuestStatus == Status.COMPLETED)
+            {
+                return 100;
+            }
             
             return (double) 100 / Items.Count * count;
         }

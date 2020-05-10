@@ -68,6 +68,22 @@ namespace QuestSystem
 
             return questEscort;
         }
+        
+        /// <summary>
+        /// Creates a list of all quests of type "QuestEscort"
+        /// </summary>
+        /// <returns></returns>
+        public List<QuestDefend> ListQuestDefend()
+        {
+            List<QuestDefend> questDefend = new List<QuestDefend>();
+            
+            foreach (var qD in quest.OfType<QuestDefend>())
+            {
+                questDefend.Add(qD);
+            }
+
+            return questDefend;
+        }
 
         /// <summary>
         /// Creates a list of active quests

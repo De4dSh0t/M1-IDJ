@@ -1,26 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace QuestSystem
 {
-    public class QuestKill : Quest
+    public class QuestDefend : Quest
     {
-        /// <summary>
-        /// List of all the entities intended to be killed
-        /// </summary>
-        public List<IKillable> Entities { get; set; }
-
-        public QuestKill()
+        public List<IProtectable> Entities { get; set; }
+        
+        public QuestDefend()
         {
             Name = "";
             Description = "";
         }
         
-        public QuestKill(string name, string description, List<IKillable> entities) : base(name, description)
+        public QuestDefend(string name, string description, List<IProtectable> entities) : base(name, description)
         {
             Entities = entities;
         }
-
+        
         /// <summary>
         /// Calculates quest progress in percentage
         /// </summary>
@@ -28,11 +24,10 @@ namespace QuestSystem
         public double Progress()
         {
             int count = 0;
-            
-            //Goes through the entire list "Entities", to verify if an entity is dead. If so, count++.
+
             foreach (var entity in Entities)
             {
-                if (entity.IsDead) //If the specified entity is dead, then count++
+                if (entity.HasSurvived)
                 {
                     count++;
                 }
@@ -43,12 +38,12 @@ namespace QuestSystem
             {
                 return 100;
             }
-
+            
             return (double) 100 / Entities.Count * count;
         }
-
+        
         /// <summary>
-        /// Method used to verify and update the status of the quest
+        /// Method used to verify the progress and update the status of the quest
         /// </summary>
         public bool IsCompleted()
         {

@@ -8,5 +8,6 @@
         public bool IsDead { get; set; }
         public bool HasBeenCollected { get; set; }
         public bool HasArrived { get; set; }
+        public bool HasSurvived { get; set; }
     }
 }
