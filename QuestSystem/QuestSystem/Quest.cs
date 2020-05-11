@@ -118,14 +118,16 @@ namespace QuestSystem
         public void QuestTimer()
         {
             Timer timer = new Timer();
-
-            timer.Interval = time; //Adds quest time to the Timer interval
-            timer.Elapsed += Event; //When that interval ends, the "Event()" occurs
-            timer.Enabled = true;
-
+            
             if (questStatus == Status.COMPLETED || questStatus == Status.CANCELLED)
             {
                 timer.Stop();
+            }
+            else
+            {
+                timer.Interval = time; //Adds quest time to the Timer interval
+                timer.Elapsed += Event; //When that interval ends, the "Event()" occurs
+                timer.Enabled = true;
             }
         }
         
